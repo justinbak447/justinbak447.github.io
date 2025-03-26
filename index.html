@@ -9,7 +9,6 @@
       --main-color: #005f3c;
       --light-bg: #f9f9f9;
       --text-color: #333;
-      --max-width: 800px;
     }
     * {
       margin: 0;
@@ -26,85 +25,59 @@
       justify-content: center;
     }
     .container {
-      max-width: var(--max-width);
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
       width: 100%;
+      gap: 2rem;
     }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
+    .left {
+      flex: 2;
     }
-    header img {
-      width: 160px;
-      height: 160px;
+    .left h1 {
+      font-size: 3rem;
+      color: var(--main-color);
+      margin-bottom: 1rem;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .right img {
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid var(--main-color);
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2rem;
-      color: var(--main-color);
-    }
-    h2 {
-      margin-top: 2rem;
-      color: var(--main-color);
-      font-size: 1.4rem;
     }
     section {
-      margin-bottom: 1.5rem;
+      margin-top: 1rem;
     }
-    .project-list li {
+    h2 {
+      color: var(--main-color);
+      font-size: 1.4rem;
       margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="Screenshot 2025-03-25 204020.png" alt="Justin Bak" />
-      <h1>Justin Bak</h1>
-      <p>Aerospace Engineer | Curious Builder | Lifelong Learner</p>
-    </header>
-
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate aerospace engineer with a deep interest in structures, propulsion, and
-        next-generation spaceflight technologies. I enjoy combining practical mechanical intuition with
-        high-fidelity analysis and simulation to push boundaries in design and performance.
-      </p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul class="project-list">
-        <li><strong>Reusable Rocket Structures:</strong> Simulated and designed structural components for reentry loads.</li>
-        <li><strong>Venus Aerostat Mission:</strong> Led structural design for robotic payload integration in a dense atmosphere.</li>
-        <li><strong>Balloon Optimization Solver:</strong> Developed MATLAB model to optimize volume under geometric constraints.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills & Tools</h2>
-      <p>NX / Teamcenter, SolidWorks, MATLAB, Python, FEA (ANSYS), Thermal-Structural Coupling, CAD-CAM, Additive Manufacturing</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: justinbak447@gmail.com<br />
-         LinkedIn: <a href="https://www.linkedin.com/in/justinbak" target="_blank">linkedin.com/in/justinbak</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Justin Bak. Built with passion and minimalism.</p>
-    </footer>
+    <div class="left">
+      <h1>Hi, I'm Justin.</h1>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate aerospace engineer with a deep interest in structures, propulsion, and
+          next-generation spaceflight technologies. I enjoy combining practical mechanical intuition with
+          high-fidelity analysis and simulation to push boundaries in design and performance.
+        </p>
+      </section>
+    </div>
+    <div class="right">
+      <img src="justin-headshot.png" alt="Justin Bak" />
+    </div>
   </div>
 </body>
 </html>
