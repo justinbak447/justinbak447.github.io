@@ -45,12 +45,6 @@
       margin-bottom: 1rem;
       text-shadow: 2px 2px 4px var(--text-shadow-color);
     }
-    .left h2 {
-      color: var(--main-color);
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 1px 1px 3px var(--text-shadow-color);
-    }
     .left p {
       text-shadow: 1px 1px 3px var(--text-shadow-color);
     }
@@ -71,6 +65,7 @@
     section {
       margin-top: 1rem;
     }
+
     .projects {
       max-width: 1000px;
       width: 100%;
@@ -81,22 +76,41 @@
     .projects h2 {
       font-size: 1.8rem;
       color: var(--main-color);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       text-shadow: 2px 2px 4px var(--text-shadow-color);
     }
-    .projects ul {
-      list-style: none;
-      padding-left: 0;
+
+    .project {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    .projects li {
-      margin-bottom: 1rem;
-    }
-    .projects a {
+    .project h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
       color: #aadfff;
-      text-decoration: none;
     }
-    .projects a:hover {
-      text-decoration: underline;
+    .project p {
+      margin-bottom: 0.6rem;
+    }
+    .project-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .project-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #aadfff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .project-link:hover {
+      background-color: #87c9e3;
     }
   </style>
 </head>
@@ -122,11 +136,50 @@
 
   <div class="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="project1.pdf" target="_blank">Reusable Rocket Structures</a></li>
-      <li><a href="project2.pdf" target="_blank">Venus Aerostat Design</a></li>
-      <li><a href="project3.pdf" target="_blank">Balloon Optimization Solver</a></li>
-    </ul>
+
+    <div class="project">
+      <h3>Large-Scale Space Domain Awareness Simulator</h3>
+      <p>At Cornell University, I was responsible for the structural design of a large-scale space domain awareness simulator testbed. The design is driven by stringent requirements and went through several iterations before approval for fabrication. Check out my project report below to find out what went into design decisions, how I verified the design through a modal analysis, and more!</p>
+      <img src="rocket-thumb.jpg" alt="Rocket project" class="project-img">
+      <p><a class="project-link" href="project1.pdf" target="_blank">View PDF</a></p>
+    </div>
+
+    <div class="project">
+      <h3>VISTA (Venusian In-Situ Tropospheric Aerostat)</h3>
+      <p>A mission concept study for operating a balloon-based robotic platform to explore the feasibility of human life in the upper atmosphere of Venus. The main objective of this project is to explore the role of systems engineering in a broad sense. Below, I have included my preliminary design report (PDR) for VISTA:</p>
+      <img src="venus-thumb.jpg" alt="Venus project" class="project-img">
+      <p><a class="project-link" href="project2.pdf" target="_blank">View PDF</a></p>
+    </div>
+
+    <div class="project">
+      <h3>The Sunyaev Zel'dovich Effect as it relates to Galaxy Formation and Evolution</h3>
+      <p>My research paper of the Sunyaev Zel'dovich Effect (SZE). I had a blast this spring learning about galaxies, specifically on how they form and evolve from early Universe to redshifts below 0.2. This research paper is the culmination of my academic delve into astronomy</p>
+      <img src="balloon-thumb.jpg" alt="Balloon project" class="project-img">
+      <p><a class="project-link" href="project3.pdf" target="_blank">View PDF</a></p>
+    </div>
+
+    <div class="project">
+      <h3>The Dynamics of a Carving Snowboarder</h3>
+      <p>In this project, I find how to mathematically describe the dynamics of a snowboarder navigating down a mountain, using both the Differential Algebraic Equations (DAE) method and Lagrangian method. At a certain roll angle, the snowboarder experiences "carving" where they are constrained to a carving radius. This behavior is modeled in MATLAB, the code of which is included in the paper's Apppendix.</p>
+      <img src="balloon-thumb.jpg" alt="Balloon project" class="project-img">
+      <p><a class="project-link" href="project3.pdf" target="_blank">View PDF</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Comparative Analysis of Propulsion Methods for a Mission to Mars</h3>
+      <p>In this project, my colleagues and I assess the feasibility of Nuclear Thermal Propulsion (NTP) for a planned mission to Mars. To do this, we compare time constraints, performance metrics, and logistical outcomes for the aforementioned method to that of chemical and electric propulsion.</p>
+      <img src="balloon-thumb.jpg" alt="Balloon project" class="project-img">
+      <p><a class="project-link" href="project3.pdf" target="_blank">View PDF</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Design and Fabrication of a Turbulent Wind Tunnel</h3>
+      <p>In my senior year at the University of South Carolina, I was tasked with designing a low Reynold's number wind tunnel. My teammates and I performed hand calculations, threee-dimensional CFD simulations, and finite element analysis to ensure the success of the project, which fit under a budget of $1250.</p>
+      <img src="balloon-thumb.jpg" alt="Balloon project" class="project-img">
+      <p><a class="project-link" href="project3.pdf" target="_blank">View PDF</a></p>
+    </div>
+
   </div>
 </body>
 </html>
+
